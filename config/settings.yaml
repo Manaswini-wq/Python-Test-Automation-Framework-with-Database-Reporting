@@ -1,0 +1,16 @@
+database:
+  uri: "mongodb://localhost:27017"
+  name: "test_results"
+  collection: "runs"
+
+runner:
+  parallel: false
+  max_retries: 2
+  timeout_sec: 30
+  verbose: true
+
+reporting:
+  console: true
+  html: true
+  html_output: "reports/test_report.html"
+  database: true
